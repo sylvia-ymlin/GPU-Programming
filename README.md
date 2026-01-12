@@ -1,12 +1,12 @@
-# GPU Computing
+# CUDA Kernels & High-Performance Computing
 
-High-performance CUDA kernel optimization from basic implementations to production-level performance.
+High-performance CUDA kernel optimization from basic implementations to production-level performance, achieving **83.4% of cuBLAS throughput**.
 
 **Key Results:**
-- 83.4% of cuBLAS performance for SGEMM
-- 90.4% of peak memory bandwidth for elementwise operations
-- 1012x speedup for MNIST training (FP16 vs C baseline)
-- Complete Nsight Systems profiling analysis
+- **SGEMM**: 83.4% of cuBLAS performance via Tiling, Double Buffering, and Vectorized Loads.
+- **Memory Bandwidth**: 90.4% utilization for elementwise operations (Vector + Rectify patterns).
+- **MNIST Training**: 1012x speedup (FP16/Tensor Cores) vs C baseline.
+- **Profiling**: Comprehensive analysis using Nsight Systems & Compute.
 
 **Tested on:** NVIDIA GeForce RTX 3090, CUDA 12.1
 
@@ -14,12 +14,11 @@ High-performance CUDA kernel optimization from basic implementations to producti
 
 ```
 cuda-kernels-from-scratch/
-├── kernels/                 # Core CUDA kernels
-├── mnist-cuda/              # End-to-end MLP training
-├── pytorch-extension/       # Custom PyTorch CUDA extension
-├── triton/                  # Triton kernel examples
-├── docs/                    # Performance analysis and documentation
-└── lectures/                # GPU programming lecture notes
+├── kernels/                 # Core CUDA kernels (SGEMM, Reductions, Elementwise)
+├── mnist-cuda/              # End-to-end MLP training implementation
+├── pytorch-extension/       # Custom PyTorch CUDA operator integration
+├── triton/                  # Triton kernel examples (blocked softmax)
+└── docs/                    # Performance analysis and benchmarking reports
 ```
 
 ## Projects
@@ -31,7 +30,6 @@ cuda-kernels-from-scratch/
 | [pytorch-extension/](pytorch-extension/) | PyTorch extension | Polynomial activation kernel |
 | [triton/](triton/) | Triton kernels | vec_add, softmax |
 | [docs/](docs/) | Performance analysis | Complete Nsight Systems analysis |
-| [lectures/](lectures/) | Lecture notes | GPU programming fundamentals |
 
 ## Build & Run
 
