@@ -26,9 +26,9 @@ Performance analysis and profiling results for the CUDA kernels optimization pro
 ## File Organization
 
 ### Analysis Documents
-- **COMPLETE_PERFORMANCE_ANALYSIS.md** - Comprehensive technical report
-- **INTERVIEW_SUMMARY.md** - Key talking points for technical interviews
-- **NSIGHT_ANALYSIS_RESULTS.txt** - Raw Nsight Systems profiling output
+- **complete_performance_analysis.md** - Comprehensive technical report
+- **interview_summary.md** - Key talking points for technical interviews
+- **nsight_analysis_results.txt** - Raw Nsight Systems profiling output
 
 ### Performance Data
 - **sgemm_timeline.nsys-rep** - Nsight Systems timeline profile (if available)
@@ -101,14 +101,14 @@ sgemm_v7: 1.59ms per kernel
 ## Usage
 
 ### For Resume Updates
-1. Read COMPLETE_PERFORMANCE_ANALYSIS.md for technical details
-2. Use INTERVIEW_SUMMARY.md for talking points
+1. Read complete_performance_analysis.md for technical details
+2. Use interview_summary.md for talking points
 3. Reference specific numbers: 83.4%, 90.4%, 5.8x speedup
 
 ### For Interview Preparation
-1. Study key talking points in INTERVIEW_SUMMARY.md
+1. Study key talking points in interview_summary.md
 2. Memorize key numbers: 83.4%, 90.4%, 5.8x speedup
-3. Review NSIGHT_ANALYSIS_RESULTS.txt for profiling evidence
+3. Review nsight_analysis_results.txt for profiling evidence
 
 ### To Regenerate Plots
 ```bash

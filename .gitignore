@@ -48,5 +48,4 @@ __pycache__/
 *_analysis.txt
 
 # Documentation directory (not tracked in git)
-docs/
 Lectures/
