@@ -1,0 +1,52 @@
+# Build directories
+build/
+*/build/
+
+# Data directories
+mnist-cuda/data/
+data/
+
+# Profiling files
+*.nsys-rep
+*.ncu-rep
+*.sqlite
+*.qdstrm
+
+# Temporary files
+*.tmp
+*.log
+*.out
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# CSV output files (generated during analysis)
+*_trace.csv
+*_metrics.csv
+*_output.txt
+*_analysis.txt
+
+# Documentation directory (not tracked in git)
+docs/
+Lectures/
