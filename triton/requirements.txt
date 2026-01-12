@@ -1,0 +1,7 @@
+# Triton GPU kernel development dependencies
+# Requires NVIDIA GPU with CUDA support
+torch>=2.0.0
+triton>=2.1.0
+numpy>=1.20.0
+matplotlib>=3.5.0
+pandas>=1.5.0
